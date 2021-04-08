@@ -1,0 +1,90 @@
+
+ hr{
+     color: #70757a;
+ }
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+p {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.carousel-container {
+    
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.carousel {
+    
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    
+    height: auto;
+    width: 400%;
+    transition: all 0.3s;
+}
+.slider section {
+    
+    width: 100%;
+    text-align: center;
+}
+.slider section img {
+    width: 90%;
+    height: 90%;
+    
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.arrow.left{
+    left: 10px;
+    color: gray;
+}
+
+.arrow.right {
+    right: 10px;
+    color: gray;
+}
+
+.controls ul {
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+}
+
+.controls ul li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.controls ul li.selected{
+    background-color: gray ;
+}
